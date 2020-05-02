@@ -46,7 +46,7 @@ async def roll(ctx, dice):
     formato = re.compile('[0-9]{1,3}d[0-9]{1,3}')
     logger.info(f'Roll comand with {dice}')
     if formato.match(dice) is None:
-        message.channel.send('Non ho capito')
+        ctx.send('Non ho capito')
         return
 
     total = 0
