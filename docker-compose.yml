@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  shodandiscordbot:
+    image: shodandiscordbot
+    build:
+      context: .
+      dockerfile: Dockerfile
