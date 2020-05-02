@@ -6,7 +6,8 @@ After=network.target
 Type=simple
 WorkingDirectory=/srv/shodan
 ExecStart=/srv/shodan/bin/shodan
-DynamicUser=true
+User=shodan
+Group=shodan
 
 [Install]
 WantedBy=multi-user.target
