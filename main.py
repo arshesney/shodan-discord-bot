@@ -4,10 +4,13 @@ import re
 import random
 import discord
 import logging
+from dotenv import load_dotenv
 from discord.ext import commands
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
+
+load_dotenv()
 
 TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
