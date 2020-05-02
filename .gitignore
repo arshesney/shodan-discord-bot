@@ -142,3 +142,6 @@ pyenv/
 
 # runtime
 var/
+
+# vscode
+.vscode/
