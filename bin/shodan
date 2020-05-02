@@ -1,0 +1,8 @@
+#!/bin/bash
+_basedir="$(dirname "$(readlink -f "$0")")/.."
+. $_basedir/pyenv/bin/activate
+set -o allexport
+. /etc/conf.d/shodan
+set +o allexport
+
+python $_basedir/main.py
