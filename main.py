@@ -4,6 +4,7 @@ import re
 import random
 import discord
 import logging
+import configparser
 from discord.ext import commands
 
 logger = logging.getLogger(__name__)
@@ -11,6 +12,10 @@ logging.basicConfig(level=logging.INFO)
 
 TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
+CONFIG = os.getenv('SHODAN_CONFIG')
+
+config = configparser.ConfigParser()
+config.read(CONFIG)
 
 shodan = commands.Bot(command_prefix='!')
 

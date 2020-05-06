@@ -1,0 +1,2 @@
+[global]
+games_feed = [] # list of steam rss urls for game news

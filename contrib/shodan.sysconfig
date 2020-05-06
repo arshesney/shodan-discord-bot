@@ -1,0 +1,3 @@
+DISCORD_TOKEN="<api_token>"
+DISCORD_GUILD="<server_name>"
+SHODAN_CONFIG="conf/shodan.conf"
