@@ -145,3 +145,6 @@ var/
 
 # configuration
 conf/shodan.conf
+#
+# vscode
+.vscode/
